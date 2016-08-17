@@ -1,0 +1,46 @@
+body {
+  font-family: sans-serif;
+  margin: 1% auto;
+  width: 50%;
+}
+input[type="text"],
+textarea,
+label {
+  display: inline-block;
+  margin: 0 0 0.5em 0;
+  padding: 0.5em;
+}
+input[type="text"],
+textarea {
+  border: 1px solid #a0a0a0;
+  font-size: 100%;
+  width: 70%;
+}
+label {
+  vertical-align: top;
+  width: 20%;
+}
+input[type="submit"] {
+  display: block;
+  font-size: 100%;
+  margin: 0 auto;
+  width: 5em;
+}
+
+div#spinner {
+  display: none;
+  margin: 0 auto;
+  width: 50px;
+}
+circle {
+  fill: none;
+  stroke: #111;
+  animation: loading 1.5s ease-in-out infinite;
+  animation-direction: alternate;
+  stroke-dasharray: 157.07963267948966;
+  stroke-dashoffset: 157.07963267948966;
+}
+@keyframes loading {
+  from { stroke-dashoffset: 157.07963267948966; }
+  to {stroke-dashoffset: 0; }
+}

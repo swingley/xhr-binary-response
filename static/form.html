@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <link href="/css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <form>
+      <label for="report-title">Title:</label>
+      <input type="text" id="report-title" name="report-title" value="A Title">
+
+      <label for="report-content">Content:</label>
+      <textarea id="report-content" name="report-content">
+It was the best of times, it was the worst of times...
+      </textarea>
+
+      <input type="submit">
+    </form>
+
+    <div id="spinner">
+      <svg width="50" height="50">
+        <g transform="translate(0,50) rotate(-90)">
+          <circle cx="25" cy="25" r="24"/>
+        </g>
+      </svg>
+    </div>
+
+    <script src="//cdn.rawgit.com/eligrey/FileSaver.js/62d219a0fac54b94cd4f230e7bfc55aa3f8dcfa4/FileSaver.js"></script>
+    <script src="/js/xhr-binary.js"></script>
+  </body>
+</html>
